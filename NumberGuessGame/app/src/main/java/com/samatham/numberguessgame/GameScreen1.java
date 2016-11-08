@@ -1,5 +1,6 @@
 package com.samatham.numberguessgame;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -34,6 +35,8 @@ public class GameScreen1 extends AppCompatActivity {
             msgText1 = "You guessed a larger number";
         }else {
             msgText1 = "CONGRATULATIONS - YOU ARE RIGHT";
+            Intent intent = new Intent(GameScreen1.this, congratulation.class);
+            startActivity(intent);
         }
 
 

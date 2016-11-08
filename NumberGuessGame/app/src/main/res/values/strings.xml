@@ -10,6 +10,7 @@
             <li>Press START GAME button below to start.\n</li>
         </ul> </string>
     <string name="guess_def">1</string>
-    <string name="gameScreen_defmsg">Enter a Number</string>
+    <string name="gameScreen_defmsg">Enter a Number between 1 and 10</string>
+    <string name="play_again">PLAY \n AGAIN</string>
     <!--<string name="str1"><font face = 'Tahoma' size = '19' color = 'red'> TAHOMA  FONT </font></string>-->
 </resources>
