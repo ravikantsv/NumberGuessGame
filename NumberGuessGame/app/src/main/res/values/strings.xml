@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">NumberGuessGame</string>
+    <!--<string name="str1"><ul> <li>first item</li> </ul> <ul><li>item 2</li> </ul></string>-->
+    <string name="str1"><b><font size = '20' color = '@color/colorTitle'> Game Rules\n\n</font></b>
+        <ul><li>A random number between 1 and 10 is picked by the device.\n</li>
+            <li>The user should GUESS the number correctly.\n</li>
+            <li>Enter your GUESS and Push the GO button.\n</li>
+            <li>The feedback is displayed to guide you to GUESS the right number.\n</li>
+            <li>The game ends when you guess the right number.\n</li>
+            <li>Press START GAME button below to start.\n</li>
+        </ul> </string>
+    <!--<string name="str1"><font face = 'Tahoma' size = '19' color = 'red'> TAHOMA  FONT </font></string>-->
 </resources>
