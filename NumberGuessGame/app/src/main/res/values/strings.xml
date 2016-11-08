@@ -9,5 +9,7 @@
             <li>The game ends when you guess the right number.\n</li>
             <li>Press START GAME button below to start.\n</li>
         </ul> </string>
+    <string name="guess_def">1</string>
+    <string name="gameScreen_defmsg">Enter a Number</string>
     <!--<string name="str1"><font face = 'Tahoma' size = '19' color = 'red'> TAHOMA  FONT </font></string>-->
 </resources>

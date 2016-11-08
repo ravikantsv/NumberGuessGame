@@ -5,5 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorTitle">#0000FF</color>
     <color name="colorText">#000000</color>
+    <color name="buttonBackground">#4682B4</color>
+    <color name="buttonText">#F0F8FF</color>
+    <color name="plainTextBk">#87CEFA</color>
     <!--colorTitle royalblue-->
 </resources>

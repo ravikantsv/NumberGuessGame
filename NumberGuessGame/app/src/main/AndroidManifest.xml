@@ -15,7 +15,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GameScreen1"></activity>
+
+        <activity android:name=".GameScreen1"
+            android:label="GameScreen1"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.samatham.numberguessgame.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

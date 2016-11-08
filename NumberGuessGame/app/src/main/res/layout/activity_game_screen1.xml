@@ -10,4 +10,76 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.samatham.numberguessgame.GameScreen1">
 
+
+    <TextView
+        android:text="Enter A Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="11dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        android:id="@+id/gameScreenTitle" />
+
+    <EditText
+        android:layout_width="100sp"
+        android:layout_height="70sp"
+        android:inputType="textPersonName"
+        android:text="@string/guess_def"
+        android:ems="10"
+        android:textAlignment="center"
+        android:layout_below="@+id/gameScreenTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/guessNum"
+        android:maxLines="1"
+        android:textSize="50sp"
+        android:background="@color/plainTextBk"
+        android:selectAllOnFocus="true" />
+
+    <Button
+        android:text="GUESS"
+        android:textColor="@color/buttonText"
+        android:layout_width="80sp"
+        android:layout_height="50sp"
+        android:id="@+id/bStartGame"
+        android:textSize="15sp"
+        android:onClick="compareNum"
+        android:background="@color/buttonBackground"
+        android:layout_below="@+id/guessNum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:text="RESULT:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bStartGame"
+        android:layout_alignLeft="@+id/gameScreenTitle"
+        android:layout_alignStart="@+id/gameScreenTitle"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="29dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        android:id="@+id/tv_result" />
+
+    <TextView
+        android:text="@string/gameScreen_defmsg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_result"
+        android:layout_alignLeft="@+id/tv_result"
+        android:layout_alignStart="@+id/tv_result"
+        android:layout_marginTop="24dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorText"
+        android:id="@+id/tv_feedback" />
+
 </RelativeLayout>
