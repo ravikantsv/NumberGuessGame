@@ -71,7 +71,7 @@
         android:id="@+id/tv_result" />
 
     <TextView
-        android:text="@string/gameScreen_defmsg"
+        android:text=""
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/tv_result"
