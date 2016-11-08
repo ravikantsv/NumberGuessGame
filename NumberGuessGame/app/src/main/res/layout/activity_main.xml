@@ -19,9 +19,12 @@
 
     <Button
         android:text="START GAME"
+        android:textColor="#F0F8FF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/bStartGame"
+        android:onClick="startGame"
+        android:background="#4682B4"
         android:layout_marginBottom="56dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
