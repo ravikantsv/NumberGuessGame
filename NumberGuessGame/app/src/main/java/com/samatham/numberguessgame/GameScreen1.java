@@ -28,6 +28,10 @@ public class GameScreen1 extends AppCompatActivity {
         msgText.setText(msgDef);
     }
 
+    public String getEmojiByUnicode(int unicode){
+        return new String(Character.toChars(unicode));
+    }
+
     public void compareNum(View view) {
         InputMethodManager inputManager = (InputMethodManager)
                 getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -44,9 +48,9 @@ public class GameScreen1 extends AppCompatActivity {
 
         String msgText1;
         if(numGuess > inputNum){
-            msgText1 = "HIGHER";
+            msgText1 = "HIGHER ⬆️⬆️⬆️";
         }else if(numGuess < inputNum){
-            msgText1 = "SMALLER";
+            msgText1 = "SMALLER ⬇️⬇️⬇️";
         }else {
             msgText1 = "CONGRATULATIONS - YOU ARE RIGHT";
             Intent intent = new Intent(GameScreen1.this, congratulation.class);

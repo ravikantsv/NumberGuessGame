@@ -12,7 +12,7 @@
 
 
     <TextView
-        android:text="Enter A Number"
+        android:text="@string/enter_a_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -21,8 +21,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="11dp"
-        android:textSize="18sp"
-        android:textColor="@color/colorText"
+        android:textSize="22sp"
+        android:textColor="@color/colorTitle"
         android:textStyle="bold"
         android:id="@+id/gameScreenTitle" />
 
@@ -65,8 +65,8 @@
         android:layout_marginLeft="18dp"
         android:layout_marginStart="18dp"
         android:layout_marginTop="29dp"
-        android:textSize="18sp"
-        android:textColor="@color/colorText"
+        android:textSize="30sp"
+        android:textColor="@color/colorTitle"
         android:textStyle="bold"
         android:id="@+id/tv_result" />
 
@@ -78,7 +78,7 @@
         android:layout_alignLeft="@+id/tv_result"
         android:layout_alignStart="@+id/tv_result"
         android:layout_marginTop="24dp"
-        android:textSize="16sp"
+        android:textSize="25sp"
         android:textColor="@color/colorText"
         android:id="@+id/tv_feedback" />
 

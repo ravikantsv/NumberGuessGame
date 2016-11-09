@@ -12,5 +12,6 @@
     <string name="guess_def">1</string>
     <string name="gameScreen_defmsg">Enter a Number between 1 and 10</string>
     <string name="play_again">PLAY \n AGAIN</string>
+    <string name="enter_a_number">Enter A Number</string>
     <!--<string name="str1"><font face = 'Tahoma' size = '19' color = 'red'> TAHOMA  FONT </font></string>-->
 </resources>
