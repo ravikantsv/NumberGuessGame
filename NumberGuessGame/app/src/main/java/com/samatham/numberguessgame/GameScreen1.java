@@ -17,6 +17,8 @@ public class GameScreen1 extends AppCompatActivity {
     private int numGuess;
     public static final int ST_NUM = 1;
     public static final int LAST_NUM = 32;
+    int upArrow = 0x23EB;
+    int downArrow = 0x23EC;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,9 +50,13 @@ public class GameScreen1 extends AppCompatActivity {
 
         String msgText1;
         if(numGuess > inputNum){
-            msgText1 = "HIGHER ⬆️⬆️⬆️";
+//            msgText1 = "HIGHER ⬆️⬆️⬆️";
+            msgText1 = "HIGHER " + getEmojiByUnicode(upArrow) + getEmojiByUnicode(upArrow)
+            + getEmojiByUnicode(upArrow);
         }else if(numGuess < inputNum){
-            msgText1 = "SMALLER ⬇️⬇️⬇️";
+//            msgText1 = "SMALLER ⬇️⬇️⬇️";
+            msgText1 = "SMALLER " + getEmojiByUnicode(downArrow) + getEmojiByUnicode(downArrow) +
+            getEmojiByUnicode(downArrow);
         }else {
             msgText1 = "CONGRATULATIONS - YOU ARE RIGHT";
             Intent intent = new Intent(GameScreen1.this, congratulation.class);
@@ -58,6 +64,5 @@ public class GameScreen1 extends AppCompatActivity {
         }
 //        msgText.setText(msgText1 + "\n" + msgText2 + msgText3);
         msgText.setText(msgText1);
-
     }
 }
