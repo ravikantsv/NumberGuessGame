@@ -1,9 +1,11 @@
 package com.samatham.numberguessgame;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -27,6 +29,11 @@ public class GameScreen1 extends AppCompatActivity {
     }
 
     public void compareNum(View view) {
+        InputMethodManager inputManager = (InputMethodManager)
+                getSystemService(Context.INPUT_METHOD_SERVICE);
+
+        inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
+                InputMethodManager.HIDE_NOT_ALWAYS);
         editor = (EditText) findViewById(R.id.guessNum);
         msgText = (TextView) findViewById(R.id.tv_feedback);
 //        String msgDef = "Enter a Number between " + ST_NUM + " to " + LAST_NUM;
